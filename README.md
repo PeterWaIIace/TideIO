@@ -6,7 +6,7 @@ Disclaimer: This is independent project, not (yet) connected to tide. It uses ti
 
 Project was done as internal need for Tide SocketIO implementaion
 
-## Current state of the project [WiP]:
+## Current state of the project **[Experimental - WiP]**:
 
 - 👍 Long Polling: Works/WiP
 - 👎 WebSockets: NYI/Not Yet Implemented
