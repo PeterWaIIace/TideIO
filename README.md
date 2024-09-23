@@ -8,7 +8,7 @@ Project was done as internal need for Tide SocketIO implementaion
 
 ## Current state of the project **[Experimental - WiP]**:
 
-- 👍 Long Polling: Experimental/Operational/Not Fully Featured
+- 👍 Long Polling: 👍**Operational** / 👎 Not Fully Featured
 - 👎 WebSockets: NYI/Not Yet Implemented
 
 ## How to test:
