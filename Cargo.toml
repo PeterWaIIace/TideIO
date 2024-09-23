@@ -1,0 +1,23 @@
+[package]
+name = "my_rust_project"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde_json = "1.0"
+lazy_static = "1.4"
+tokio = { version = "1", features = ["full"] } 
+tide = "0.16"
+tide-websockets = "0.4"
+askama = "0.12"
+argon2 = "0.3"
+bcrypt = "0.12"
+futures = "0.3"
+async-std = "1.10"
+futures-util = "0.3"
+jsonwebtoken = "8.1"
+async-session = "3.0.0"
+rust_socketio = "0.6"
+http-types = "2.12.0"
+base64 = "0.21"  # Check for the latest version on crates.io
+serde = { version = "1.0", features = ["derive"] }

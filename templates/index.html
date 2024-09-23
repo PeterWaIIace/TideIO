@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOCKETIO_TEST</title>
+</head>
+<body>
+    <p>Press cntrl+shift+c to see packets</p>
+    <!-- SocketIO JavaScript -->
+    <script src="https://cdn.socket.io/4.5.1/socket.io.min.js"></script>
+    <script>
+        // Connect to the Flask-SocketIO server
+        const socket = io.connect('http://' + document.domain + ':' + location.port);
+        socket.on('connect', function() {
+            socket.emit("bind", {"user_id" : "some_dummy_data"});
+            console.log('connected:', socket.connected);
+        });
+
+        socket.on("onBind", (data) => {
+            console.log("data: " , data);
+            socket.emit("bind", {"user_id" : "some_dummy_data"});
+        });
+        // getAllClients();
+    </script>
+</body>
+</html>
